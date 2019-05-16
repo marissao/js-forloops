@@ -8,7 +8,7 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
-
+//ADD
 for (var i = 1; i<=20; i++){
    console.log('Now serving ' + i);
 }
@@ -69,6 +69,15 @@ Declare a variable named `stringOfNumbers` and assign its value to an empty stri
 
 Write a for-loop that concatenates a Number value into that string on each iteration, starting at `10` and continuing up to and including `20`. Console.log your result. It should read "1011121314151617181920"*/
 
+var stringOfNumbers = ""
+// console.log(stringOfNumbers)
+
+for(var i = 11; i<=20; i++){
+   // console.log(i) > Output 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+   stringOfNumbers.concat
+}
+
+console.log(stringOfNumbers)
 
 /* 5) Even Stevens
 Declare a variable named `evenNumArr` and assign its value to an empty array. 
@@ -92,6 +101,17 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
 
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ]
+//console.log(oopsArray)
+
+for(var i = 0; i<oopsArray.length; i++){
+   // console.log(oopsArray[i])
+   if(i%2 === 1){
+      oopsArray[i] = 'nope'; /* NOTE: you do not need to use an array method (i.e. mutator or accessor) because you are simply replacing odd index # with an item.*/
+   }
+}
+
+console.log(oopsArray)
 
 /* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
